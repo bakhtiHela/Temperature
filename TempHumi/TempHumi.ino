@@ -16,9 +16,9 @@ void loop() {
   Serial.print(mySensor.getHumi());
   Serial.println("%");
   
-  if (temperature > 29) {
+  if (temperature > 29.0) {
     Serial.println("Il fait chaud Aujourd'hui");
-  } else if (temperature >= 20 && temperature <= 29) {
+  } else if (temperature >= 20.0 && temperature <= 29.0) {
     Serial.println("Il fait beau Aujourd'hui");
   } else {
     Serial.println("Il fait froid Aujourd'hui");
